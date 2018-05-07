@@ -1,0 +1,93 @@
+/*COLORS*/
+@font-face {
+  font-family: "ArialMT";
+  src: url("fonts/arial_mt.ttf"); }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0; }
+
+ul, li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+body {
+  font-size: 62.5%;
+  height: 100%;
+  font-family: "ArialMT", Arial, sans-serif; }
+
+button {
+  font-size: 1.4rem;
+  background-color: #f2f2f2;
+  color: #4a4a4a;
+  text-align: center;
+  padding: .5rem 0;
+  border: none;
+  outline: none; }
+
+.login {
+  min-height: 650px;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: #f2f2f2; }
+  .login__left {
+    background: url("img/login-page/login_section.png") no-repeat; }
+    @media (max-width: 600px) {
+      .login__left {
+        display: none; } }
+  .login__sidebar {
+    background-color: #00b3be;
+    position: relative;
+    width: 38rem; }
+    .login__sidebar__form {
+      display: block;
+      width: 34rem;
+      margin: 0 auto; }
+    .login__sidebar label {
+      font-size: 1.4rem;
+      color: #f2f2f2;
+      margin-left: 1rem; }
+    .login__sidebar input {
+      background: none;
+      border: none;
+      outline: none;
+      margin-top: 1.5rem; }
+    .login__sidebar__logo {
+      text-align: center;
+      margin-top: 1.5rem;
+      margin-bottom: 10rem; }
+    .login__sidebar__sign {
+      margin-bottom: 6rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      position: relative; }
+      .login__sidebar__sign button {
+        width: 15rem;
+        display: inline-block; }
+      .login__sidebar__sign__in {
+        border-bottom: 4px solid #91d763; }
+      .login__sidebar__sign__up {
+        position: absolute;
+        top: 0;
+        right: 0; }
+    .login__sidebar__login {
+      width: 34rem;
+      margin-top: 1.5rem; }
+    .login__sidebar__input {
+      border-bottom: 4px solid #f2f2f2; }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #f2f2f2;
+  text-align: center;
+  padding-bottom: 2rem; }
+  .footer__text {
+    font-size: 1.4rem; }
